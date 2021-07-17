@@ -1,4 +1,4 @@
-![Leusik Elena]()
+![Leusik Elena](/images/CV_Leusik.jpg)
 # Elena Leusik
 * **Telephone number:** +375(29)3401875
 * **E-mail:** elena.leusik@gmail.com

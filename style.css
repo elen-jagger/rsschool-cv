@@ -25,3 +25,25 @@ footer {
     max-width: 1024px; 
 }
 
+.Elena {
+    font-family: '1942_report1942_report';
+    font-size: 50px;
+    text-align: left;
+    background-color: #d5f1f1;
+    margin: 41.5px 80px 41.5px 0;
+    padding: 3% 5% 3% 5%;
+}
+
+.Leusik {
+    font-family: '1942_report1942_report';
+    font-size: 50px;
+    text-align: right;
+    background-color: #d5f1f1;
+    margin: 41.5px 0 41.5px 70px;
+    padding: 3% 5% 3% 5%;
+}
+
+
+.padding {
+    padding: 3% 5% 3% 5%;
+}

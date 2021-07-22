@@ -32,12 +32,13 @@
                     <li>Other skills: research work, data search (on [PubMed](https://pubmed.ncbi.nlm.nih.gov/) and other databases) and analysis, medical statistics, medical translations, research articles writing, presentation making and public speaking, mentoring and supervising of junior researchers, blind typing (Russian keyboard layout), photographing and photo editing, color theory and composition knowlwdge</li>
                 </ul>                     
                 <h2>Code Sample</h2>
-                     <p><a href="https://www.codewars.com/kata/60908bc1d5811f0025474291">Codewars</a>
+                     <p><a href="https://www.codewars.com/kata/526c7363236867513f0005ca">Codewars</a>
                      <pre>
                          <code>
-                            const findSquares = num => {
-                                let b = ( num-1 ) / 2;
-                                return `${(b+1)**2}-${b**2}`;
+                            function isLeapYear(year){
+                                if( year%4 == 0 ){
+                                  return( !( year%100 == 0 ) ||  year%400 == 0 )
+                                }else{ return false }
                               }
                          </code>
                      </pre>

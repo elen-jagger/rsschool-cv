@@ -1,0 +1,27 @@
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+aside {
+    float: left;  
+    width: 30%;
+    height: 1000px;
+    background-color: #fdf8f4;
+}
+
+section {
+    float: left;
+    width: 70%;     
+    height: 1000px;
+    background-color: #d5f1f1;
+}
+
+footer {
+    background-color: #d5f1f1;
+    clear: both;
+    text-align: center; 
+    margin: 0 auto;  
+    max-width: 1024px; 
+}
+

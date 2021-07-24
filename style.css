@@ -1,28 +1,44 @@
+body {
+    margin: 0;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1024px;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+}
+
 aside {
-    float: left;  
-    width: 30%;
+    flex-basis: 30%;
     height: 1000px;
     background-color: #fdf8f4;
 }
 
 section {
-    float: left;
-    width: 70%;     
+    flex-basis: 70%;
     height: 1000px;
-    background-color: #d5f1f1;
+    background-color: #d5f1f1; 
 }
 
 footer {
+    display: flex;
+    background-color: #fdf8f4;   
+    justify-content: flex-end;
+}
+
+footer .author {
+    text-align: center;
+    flex-basis: 90%;
     background-color: #d5f1f1;
-    clear: both;
-    text-align: center; 
-    margin: 0 auto;  
-    max-width: 1024px; 
+}
+
+footer .year {
+    padding-left: 0;
+    padding-right: 25px;
 }
 
 .Elena {

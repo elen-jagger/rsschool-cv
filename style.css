@@ -5,6 +5,7 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1024px;
+    font-size: 18px;
 }
 
 main {
@@ -14,13 +15,13 @@ main {
 
 aside {
     flex-basis: 30%;
-    height: 1000px;
+    height: 1100px;
     background-color: #fdf8f4;
 }
 
 section {
     flex-basis: 70%;
-    height: 1000px;
+    height: 1100px;
     background-color: #d5f1f1; 
 }
 
@@ -41,7 +42,7 @@ footer .year {
     padding-right: 25px;
 }
 
-.Elena {
+.elena {
     font-family: '1942_report1942_report';
     font-size: 50px;
     text-align: left;
@@ -50,13 +51,18 @@ footer .year {
     padding: 3% 5% 3% 5%;
 }
 
-.Leusik {
+.leusik {
     font-family: '1942_report1942_report';
     font-size: 50px;
     text-align: right;
     background-color: #d5f1f1;
     margin: 41.5px 0 41.5px 70px;
     padding: 3% 5% 3% 5%;
+}
+
+h2 {
+    font-family: '1942_report1942_report';
+    font-size: 25px;
 }
 
 

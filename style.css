@@ -15,13 +15,16 @@ main {
 
 aside {
     flex-basis: 30%;
-    height: 1100px;
     background-color: #fdf8f4;
+}
+
+.avatar {
+    width: 300px;
+    height: 400px;
 }
 
 section {
     flex-basis: 70%;
-    height: 1100px;
     background-color: #d5f1f1; 
 }
 
@@ -40,6 +43,11 @@ footer .author {
 footer .year {
     padding-left: 0;
     padding-right: 25px;
+}
+
+footer .rs-school-img {
+    width: 100px;
+    height: 50px;
 }
 
 .elena {

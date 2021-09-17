@@ -40,7 +40,7 @@ nav {
     background-color: #f2e208;
     border-radius: 25%;
   }
-  /* гамбургер */
+    
   .burger-btn > span,
   .burger-btn > span::before,
   .burger-btn > span::after {
@@ -59,7 +59,6 @@ nav {
     top: 8px;
   }
 
-  /* крестик закрыть */
   .open > span {
     transform: rotate(45deg);
   }
@@ -248,7 +247,12 @@ ul {
 }
 
 
-    
+@media (min-width: 1920px) {
+    .burger-btn {
+        display: none;
+    }
+}   
+
 @media (max-width: 1920px) {
     .burger-btn {
         display: none;
@@ -345,7 +349,8 @@ ul {
         flex-direction: column;
     }
     aside{
-        width: 100%;        
+        width: 100%;      
+        margin-bottom: 3%;
     }
     .aside-article {
         margin: 2% 8%;
@@ -367,7 +372,7 @@ ul {
     header{
         flex-direction: column;
         align-items: center;
-    }
+    }    
     .title {
         margin: 0 0 10px;
     }

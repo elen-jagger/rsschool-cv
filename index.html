@@ -2,88 +2,166 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet" href="./fonts/fonts.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
 
         <title>CV Elena Leusik</title>
     </head>
     <body>
         <div class="container">
+            <div id="btn" class="burger-btn">
+                <span></span>
+            </div>  
+            <nav class="container">                                                    
+                <ul id="menu" class="menu">
+                    <li><a href="#Summary">Summary</a></li>
+                    <li><a href="#Skills">Technical Skills</a></li>
+                    <li><a href="#Code">Code Sample</a></li>
+                    <li><a href="#Experience">Professional Experience</a></li>
+                    <li><a href="#Project">Project</a></li>
+                </ul>
+            </nav>                                    
+            <header class="container">                          
+                <div class="header-figure">
+                    <figure class="avatar">
+                        <img class="avatar-img" src="./images/CV_Leusik.jpg" alt="Leusik Elena" />  
+                    </figure>
+                </div>                    
+                <div class="title">
+                    <h1>Elena Leusik</h1>
+                    <h2 class="subtitle">Frontend-developer</h2>
+                </div>
+            </header>
             <main>
-                <aside>
-                    <h1 class="elena">Elena</h1>
-                    <h1 class="leusik">Leusik</h1>
-                    <img class="avatar" src="./images/CV_Leusik.jpg" alt="Leusik Elena" />                
-                    <h2>Contacts</h2>
-                    <ul>
-                        <li>Location: Minsk, Belarus</li>
-                        <li>Telephone number: +375(29)3401875</li>
-                        <li>E-mail: elena.leusik@gmail.com</li>
-                        <li>Github: <a href="https://github.com/elen-jagger">elen-jagger</a></li>
-                    </ul>                     
+                <aside>                     
+                    <article class="aside-article">
+                        <h3>Contacts</h3>
+                        <hr>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-map-marker"></i>Minsk, Belarus</li>
+                            <li><i class="fa-li fa fa-mobile"></i>+375(29)3401875</li>
+                            <li><i class="fa-li fa fa-envelope"></i>elena.leusik@gmail.com</li>
+                            <li><i class="fa-li fa fa-github"></i><a href="https://github.com/elen-jagger">elen-jagger</a></li>
+                        </ul> 
+                    </article>                           
+                    <article class="aside-article">
+                        <h3>English Level</h3>
+                        <hr>
+                        <p><strong>B2</strong></p>
+                        <p>
+                            Advanced course of medical English in BSMU
+                        </p>    
+                    </article>                                    
                 </aside>
-                <section>
-                    <div class="padding">
-                        <h2>Summary</h2>
-                        <details>
-                            <summary>
-                                Novice frontend-developer with medical education. I have Candidate of Sciences in Medicine degree. Working on it gave me a huge experience in research work, data collecting and analysis, working in team and independently, time-management, adherence to the deadlines and extensive English practice. As my hobby is photographing I'm skilled in color theory and picture composition. I'm also experienced user of Photoshop, Lightroom and Illustrator.
-                            </summary>
-                        </details> 
-                        <h2>Technical Skills</h2>
+                <section>                
+                    <h6>section title</h6>
+                    <article class="section-article">
+                        <h3 id="Summary">Summary</h3>      
+                        <hr>                 
+                        <p>
+                            Novice frontend-developer with medical education. I have Candidate of Sciences in Medicine degree. Working on it gave me a huge experience in research work, data collecting and analysis, working in team and independently, time-management, adherence to the deadlines and extensive English practice. As my hobby is photographing I'm skilled in color theory and picture composition. I'm also experienced user of Photoshop, Lightroom and Illustrator.
+                        </p>
+                    </article>     
+                    <article class="section-article">
+                        <h3 id="Skills">Technical Skills</h3>
+                        <hr>  
                         <ul>
                             <li>Programming languages and technologies: HTML, CSS, JavaScript</li>
                             <li>Programming practices: Agile, Kanban</li>
                             <li>Tools: Git, VS Code, Adobe Photoshop, Adobe Lightroom, Adobe Illustrator, SPSS Statistics</li>
                             <li>Other skills: research work, data search (on <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> and other databases) and analysis, medical statistics, medical translations, research articles writing, presentation making and public speaking, mentoring and supervising of junior researchers, blind typing (Russian keyboard layout), photographing and photo editing, color theory and composition knowlwdge</li>
-                        </ul>                     
-                        <h2>Code Sample</h2>
+                        </ul>  
+                    </article>   
+                    <article class="section-article">              
+                        <h3 id="Code">Code Sample</h3>
+                        <hr>  
                         <div>
-                            <a href="https://www.codewars.com/kata/526c7363236867513f0005ca">Codewars</a>
+                            <a href="https://www.codewars.com/kata/513e08acc600c94f01000001">Codewars: RGB To Hex Conversion</a>
                             <pre>                         
                                 <code>
-                                
-function isLeapYear(year) {
-    if (year % 4 == 0) {
-        return(!(year % 100 == 0) ||  year % 400 == 0)
-    } else { return false; }
-}
+function rgb(r, g, b){
+
+    function convert(num) {
+    if (num &lt;= 0) { return '00'; }
+    else if (num > 255) { 
+        return (255).toString(16); 
+    } else {    
+        let hexaNum = (num).toString(16); 
+        if (hexaNum.length &lt; 2) {
+            let binaryHexaNum = '0' + hexaNum;
+        return binaryHexaNum;
+        }      
+        else { return hexaNum; }
+    }
+    }
+    
+    const Hex = convert(r) + convert(g) + 
+        convert(b);
+    return Hex.toUpperCase();
+}                                                     
                                 </code>
                             </pre>
                         </div>
-                        <h2>Education and Professional Experience</h2>
+                    </article>      
+                    <article class="section-article">
+                        <h3 id="Experience">Education and Professional Experience</h3>
+                        <hr>  
                         <ul>                    
-                            <li>IT
+                            <li><h3>IT</h3>
                                 <ul>
                                     <li>Self-education - <a href="https://learn.javascript.ru/">JavaScript guide</a></li>
                                     <li>Rolling scopes school</li>
                                 </ul>
                             </li>
-                            <li>Medicine
+                            <li><h3>Medicine</h3>
                                 <ul>
                                     <li>Belarusian State Medical University (General Medicine)</li>
                                     <li>Belarusian Medical Academy of Postgraduate Studies (Radiology)</li>
                                     <li>Candidate of Sciences in Medicine degree</li>
                                 </ul>
                             </li>
-                        </ul>                     
-                        <h2>English Level</h2>
-                        <p>
-                            B2<br />
-                            Advanced course of medical English in BSMU
-                        </p>
-                    </div>                
+                        </ul>  
+                    </article>                                      
+                    <article class="section-article">
+                        <h3 id="Project">Project</h3>
+                        <hr>  
+                        <p>Custom video player</p>                        
+                        <div class="project">
+                            <a href="https://rolling-scopes-school.github.io/elen-jagger-JSFEPRESCHOOL/custom-video-player/">
+                            <img class="project-img" src="./images/video_player.jpg" alt="video player" />
+                            </a>
+                        </div>
+                        
+                    </article>                                           
                 </section>               
             </main>
             <footer>
                 <div class="author">
-                    <a href="https://github.com/elen-jagger">Elen-jagger</a>
+                    <a href="https://github.com/elen-jagger"><h3>Elen-jagger</h3></a>
                     <span class="year">, 2021.</span>
                     <a href="https://rs.school/js/">
-                        <img class="rs-school-img" src="https://rs.school/images/rs_school_js.svg" alt="RS School" />
+                        <img class="rs-school-img" src="./images/rs_school_js.svg" alt="RS School" />
                     </a>
                 </div>            
             </footer>
         </div>
+        <script>
+            
+    const btn = document.querySelector('.burger-btn');
+    const menu = document.querySelector('.menu');
+
+    function ToggleMenu() {
+        btn.classList.toggle("open");               
+        menu.classList.toggle("menu-open");  
+    }
+
+    btn.addEventListener('click', ToggleMenu);
+    
+    console.log('hello');
+        </script>
     </body>
 </html>

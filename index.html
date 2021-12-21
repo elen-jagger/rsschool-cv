@@ -8,9 +8,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">       
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"> -->
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> -->
         <title>CV Elena Leusik</title>
     </head>
     <body>
@@ -132,10 +132,13 @@ function rgb(r, g, b){
                         <h3 id="Project">Project</h3>
                         <hr>  
                         <h3>Custom video player</h3>
-                        <p>Video player for Museum project. Made using Html5, CSS3 and Js.</p>                        
+                        <p>Museum project and video player for it. Made using Html5, CSS3 and Js.</p>                        
                         <div class="project">
+                            <a href="https://rolling-scopes-school.github.io/elen-jagger-JSFE2021Q3/museum-adaptive/" target="_blank">
+                                <img class="project-img" src="./images/Museum.jpg" alt="Museum" />                                
+                            </a>
                             <a href="https://rolling-scopes-school.github.io/elen-jagger-JSFEPRESCHOOL/custom-video-player/" target="_blank">
-                            <img class="project-img" src="./images/video_player.jpg" alt="video player" />
+                                <img class="project-img" src="./images/video_player.jpg" alt="video player" />
                             </a>
                         </div>                        
                     </article>                                           
@@ -143,9 +146,9 @@ function rgb(r, g, b){
             </main>
             <footer>
                 <div class="author">
-                    <a href="https://github.com/elen-jagger"><h3>Elen-jagger</h3></a>
-                    <span class="year">, 2021.</span>
-                    <a href="https://rs.school/js/">
+                    <a href="https://github.com/elen-jagger" target="_blank"><h3>Elen-jagger</h3></a>
+                    <span class="year">, 2022.</span>
+                    <a href="https://rs.school/js/" target="_blank">
                         <img class="rs-school-img" src="./images/rs_school_js.svg" alt="RS School" />
                     </a>
                 </div>            
@@ -163,22 +166,17 @@ function rgb(r, g, b){
 
         btn.addEventListener('click', toggleMenu);
     
-        console.log('самооценка 150 баллов');
+        console.log('самооценка 130 баллов');
+        console.log('студент засабмитил в rs app ссылку на своё CV, задеплоенное на gh-pages +10');
         console.log('вёрстка валидная +10');
-        console.log('вёрстка семантическая +20ю В коде страницы присутствуют семантические теги HTML5: article, aside, figure, footer, header, main, nav, section, используются заголовки h1, h2, h3');
+        console.log('вёрстка семантическая +20. В коде страницы присутствуют  header, main, footer, используются заголовки h1, h2');
+        console.log('в footer есть ссылка на гитхаб автора работы, год создания приложения, логотип курса со ссылкой на курс +10');
         console.log('для оформления СV используются css-стили +10');
-        console.log('контент размещается в блоке, который горизонтально центрируется на странице. Фонового цвета нет +10');
-        console.log('вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10');
-        console.log('есть адаптивное бургер-меню для разрешения 768 и нижею Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным.  +10');
-        console.log('на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt +10');
-        console.log('контакты для связи и перечень навыков оформлены в виде списка ul > li +10');
-        console.log('CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10');
-        console.log('CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода. +10');
-        console.log('CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10');
-        console.log('CV выполнено на английском языке +10');
-        console.log('выполнены требования к Pull Request (!!! ссылка на Pull Request: https://github.com/elen-jagger/rsschool-cv/pull/4): есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) +10');
-        varconsole.log('видео нет - 0');
-        varconsole.log('дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию  +10');
+        console.log('при уменьшении масштаба страницы браузера вёрстка размещается по центру по горизонтали, а не сдвигается в сторону +10');
+        console.log('на странице СV есть фото или аватарка автора, пропорции изображения не искажены, у изображения есть атрибут alt +10');
+        console.log('навигация, контакты для связи и перечень навыков оформлены в виде списка ul > li или ul > li > a +10');
+        console.log('Содержание CV +30. CV содержит: краткую информацию о себе +5 контакты для связи +5 перечень навыков +5 пример кода. Код добавляется при помощи символов и тегов, а не картинкой +5 перечень выполненных учебных проектов со ссылками на исходный код или страницу приложения +5 информацию об образовании и уровне английского +5');
+        console.log('CV выполнено на английском языке +10');        
     </script>
     </body>
 </html>

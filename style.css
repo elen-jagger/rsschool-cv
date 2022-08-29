@@ -184,15 +184,22 @@ section {
 }
 
 .project {
-    display: flex;
+    display: flex;    
+    flex-wrap: wrap;    
     flex-direction: row;
-    justify-content: space-between;
+    row-gap: 15px;
+    column-gap: 40px;
+    justify-content: center;
     align-items:center;
     width: 100%;
 }
 
 .project > img {
     height: 170px;
+}
+
+.project > a:nth-child(2) {
+    border: 1px solid rgb(191, 191, 191);
 }
 
 footer {

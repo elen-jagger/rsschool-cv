@@ -7,10 +7,7 @@
         <link rel="stylesheet" href="./fonts/fonts.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">       
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
-        <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"> -->
-        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">        
         <title>CV Elena Leusik</title>
     </head>
     <body>
@@ -20,11 +17,11 @@
             </div>  
             <nav class="container">                                                    
                 <ul id="menu" class="menu">
-                    <li><a href="#Summary">Summary</a></li>
-                    <li><a href="#Skills">Technical Skills</a></li>
-                    <li><a href="#Code">Code Sample</a></li>
-                    <li><a href="#Experience">Professional Experience</a></li>
-                    <li><a href="#Project">Project</a></li>
+                    <li class="menu-item"><a href="#Summary">Summary</a></li>
+                    <li class="menu-item"><a href="#Skills">Technical Skills</a></li>
+                    <li class="menu-item"><a href="#Code">Code Sample</a></li>
+                    <li class="menu-item"><a href="#Experience">Professional Experience</a></li>
+                    <li class="menu-item"><a href="#Project">Project</a></li>
                 </ul>
             </nav>                                    
             <header class="container">                          
@@ -75,7 +72,7 @@
                             <li>Programming languages and technologies: HTML, CSS, JavaScript</li>
                             <li>Programming practices: Agile, Kanban</li>
                             <li>Tools: Git, VS Code, Adobe Photoshop, Adobe Lightroom, Adobe Illustrator, SPSS Statistics</li>
-                            <li>Other skills: research work, data search (on <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> and other databases) and analysis, medical statistics, medical translations, research articles writing, presentation making and public speaking, mentoring and supervising of junior researchers, blind typing (Russian keyboard layout), photographing and photo editing, color theory and composition knowlwdge</li>
+                            <li>Other skills: research work, data search (in <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> and other databases) and analysis, medical statistics, medical translations, research articles writing, presentation making and public speaking, mentoring and supervising of junior researchers, blind typing (Russian keyboard layout), photographing and photo editing, color theory and composition knowlwdge</li>
                         </ul>  
                     </article>   
                     <article class="section-article">              
@@ -131,16 +128,24 @@ function rgb(r, g, b){
                     <article class="section-article">
                         <h3 id="Project">Project</h3>
                         <hr>  
-                        <h3>Custom video player</h3>
-                        <p>Museum project and video player for it. Made using Html5, CSS3 and Js.</p>                        
+                        <p>Web-pages: Site-portfolio, image searching page, pages for Museum and Pets shelter. <br> Custom video player. <br> All projects are made using Html5, CSS3 and Js.</p>                        
                         <div class="project">
+                            <a href="https://rolling-scopes-school.github.io/elen-jagger-JSFEPRESCHOOL/portfolio/" target="_blank">
+                                <img class="project-img" src="./images/portfolio.jpg" alt="Portfolio" />                                
+                            </a>
+                            <a href="https://rolling-scopes-school.github.io/elen-jagger-JSFEPRESCHOOL/image-galery/" target="_blank">
+                                <img class="project-img" src="./images/image-gallery.jpg" alt="Image-galery" />                                
+                            </a>
                             <a href="https://rolling-scopes-school.github.io/elen-jagger-JSFE2021Q3/museum-adaptive/" target="_blank">
                                 <img class="project-img" src="./images/Museum.jpg" alt="Museum" />                                
+                            </a>
+                            <a href="https://rolling-scopes-school.github.io/elen-jagger-JSFE2022Q1/shelter/pages/main/" target="_blank">
+                                <img class="project-img" src="./images/shelter.jpg" alt="Shelter" />                                
                             </a>
                             <a href="https://rolling-scopes-school.github.io/elen-jagger-JSFEPRESCHOOL/custom-video-player/" target="_blank">
                                 <img class="project-img" src="./images/video_player.jpg" alt="video player" />
                             </a>
-                        </div>                        
+                        </div>            
                     </article>                                           
                 </section>               
             </main>
@@ -158,13 +163,20 @@ function rgb(r, g, b){
             
         const btn = document.querySelector('.burger-btn');
         const menu = document.querySelector('.menu');
+        const menuItem = document.querySelectorAll('.menu-item');
 
         function toggleMenu() {
             btn.classList.toggle("open");               
             menu.classList.toggle("menu-open");  
         }
 
+        function closeMenu() {
+            btn.classList.remove("open");               
+            menu.classList.remove("menu-open");  
+        }
+
         btn.addEventListener('click', toggleMenu);
+        menuItem.forEach((el) => el.addEventListener('click', closeMenu));
     
         console.log('самооценка 130 баллов');
         console.log('студент засабмитил в rs app ссылку на своё CV, задеплоенное на gh-pages +10');

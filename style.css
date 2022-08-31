@@ -152,8 +152,12 @@ aside {
 }
 
 .aside-article {
-    margin: 10%;
-   
+    margin: 10%;   
+} 
+
+.certificate > img {
+    width: 100%;
+    height: auto;
 }
 
 .fa {

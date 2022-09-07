@@ -12,9 +12,7 @@
     </head>
     <body>
         <div class="container">
-            <div id="btn" class="burger-btn">
-                <span></span>
-            </div>
+            <div id="btn" class="burger-btn"><span></span></div>
             <nav class="container">
                 <ul id="menu" class="menu">
                     <li class="menu-item"><a href="#Summary">Summary</a></li>
@@ -52,9 +50,7 @@
                         <hr>
                         <p><strong>C1</strong></p>
                         <a class="certificate" href="https://www.efset.org/cert/wSuRFt" target="_blank"><img src="./images/certificate.jpg" alt="eng-certificate"></a>
-                        <p>
-                            Advanced course of medical English in BSMU
-                        </p>
+                        <p>Advanced course of medical English in BSMU</p>
                     </article>
                 </aside>
                 <section>
@@ -62,9 +58,7 @@
                     <article class="section-article">
                         <h3 id="Summary">Summary</h3>
                         <hr>
-                        <p>
-                            Novice frontend-developer with medical education. I have Candidate of Sciences in Medicine degree. Working on it gave me a huge experience in research work, data collecting and analysis, working in team and independently, time-management, adherence to the deadlines and extensive English practice. As my hobby is photographing I'm skilled in color theory and picture composition. I'm also experienced user of Photoshop, Lightroom and Illustrator.
-                        </p>
+                        <p>Novice frontend-developer with medical education. I have Candidate of Sciences in Medicine degree. Working on it gave me a huge experience in research work, data collecting and analysis, working in team and independently, time-management, adherence to the deadlines and extensive English practice. As my hobby is photographing I'm skilled in color theory and picture composition. I'm also experienced user of Photoshop, Lightroom and Illustrator.</p>
                     </article>
                     <article class="section-article">
                         <h3 id="Skills">Technical Skills</h3>
@@ -87,19 +81,19 @@ function rgb(r, g, b){
 
     function convert(num) {
     if (num &lt;= 0) { return '00'; }
-    else if (num &gt; 255) { 
-        return (255).toString(16); 
-    } else {    
-        let hexaNum = (num).toString(16); 
+    else if (num &gt; 255) {
+        return (255).toString(16);
+    } else {
+        let hexaNum = (num).toString(16);
         if (hexaNum.length &lt; 2) {
             let binaryHexaNum = '0' + hexaNum;
         return binaryHexaNum;
-        }      
+        }
         else { return hexaNum; }
     }
     }
     
-    const Hex = convert(r) + convert(g) + 
+    const Hex = convert(r) + convert(g) +
         convert(b);
     return Hex.toUpperCase();
 }
@@ -129,7 +123,7 @@ function rgb(r, g, b){
                     <article class="section-article">
                         <h3 id="Project">Project</h3>
                         <hr>
-                        <p>Web-pages: Site-portfolio, image searching page, pages for Museum and Pets shelter. <br> Custom video player. <br> All projects are made using Html5, CSS3 and Js.</p>
+                        <p>Web-pages: Site-portfolio, image searching page, pages for Museum and Pets shelter.<br>Custom video player.<br>All projects are made using Html5, CSS3 and Js.</p>
                         <div class="project">
                             <a href="https://rolling-scopes-school.github.io/elen-jagger-JSFEPRESCHOOL/portfolio/" target="_blank">
                                 <img class="project-img" src="./images/portfolio.jpg" alt="Portfolio">
@@ -165,12 +159,12 @@ function rgb(r, g, b){
         const menu = document.querySelector('.menu');
         const menuItem = document.querySelectorAll('.menu-item');
         function toggleMenu() {
-            btn.classList.toggle("open");               
-            menu.classList.toggle("menu-open");  
+            btn.classList.toggle("open");
+            menu.classList.toggle("menu-open");
         }
         function closeMenu() {
-            btn.classList.remove("open");               
-            menu.classList.remove("menu-open");  
+            btn.classList.remove("open");
+            menu.classList.remove("menu-open");
         }
         btn.addEventListener('click', toggleMenu);
         menuItem.forEach((el) => el.addEventListener('click', closeMenu));

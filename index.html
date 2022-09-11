@@ -78,7 +78,6 @@
                             <pre>
                                 <code>
 function rgb(r, g, b){
-
     function convert(num) {
     if (num &lt;= 0) { return '00'; }
     else if (num &gt; 255) {
@@ -91,8 +90,7 @@ function rgb(r, g, b){
         }
         else { return hexaNum; }
     }
-    }
-    
+    }    
     const Hex = convert(r) + convert(g) +
         convert(b);
     return Hex.toUpperCase();
@@ -167,18 +165,7 @@ function rgb(r, g, b){
             menu.classList.remove("menu-open");
         }
         btn.addEventListener('click', toggleMenu);
-        menuItem.forEach((el) => el.addEventListener('click', closeMenu));
-        console.log('самооценка 130 баллов');
-        console.log('студент засабмитил в rs app ссылку на своё CV, задеплоенное на gh-pages +10');
-        console.log('вёрстка валидная +10');
-        console.log('вёрстка семантическая +20. В коде страницы присутствуют  header, main, footer, используются заголовки h1, h2');
-        console.log('в footer есть ссылка на гитхаб автора работы, год создания приложения, логотип курса со ссылкой на курс +10');
-        console.log('для оформления СV используются css-стили +10');
-        console.log('при уменьшении масштаба страницы браузера вёрстка размещается по центру по горизонтали, а не сдвигается в сторону +10');
-        console.log('на странице СV есть фото или аватарка автора, пропорции изображения не искажены, у изображения есть атрибут alt +10');
-        console.log('навигация, контакты для связи и перечень навыков оформлены в виде списка ul > li или ul > li > a +10');
-        console.log('Содержание CV +30. CV содержит: краткую информацию о себе +5 контакты для связи +5 перечень навыков +5 пример кода. Код добавляется при помощи символов и тегов, а не картинкой +5 перечень выполненных учебных проектов со ссылками на исходный код или страницу приложения +5 информацию об образовании и уровне английского +5');
-        console.log('CV выполнено на английском языке +10');
+        menuItem.forEach((el) => el.addEventListener('click', closeMenu));        
     </script>
     </body>
 </html>

@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    
 }
 
 html {
@@ -36,11 +35,11 @@ nav {
     right: 20px;
     width: 30px;
     height: 30px;
-    cursor: pointer;   
+    cursor: pointer;
     background-color: #f2e208;
     border-radius: 25%;
   }
-    
+
   .burger-btn > span,
   .burger-btn > span::before,
   .burger-btn > span::after {
@@ -70,7 +69,6 @@ nav {
     top: 0;
     transform: rotate(90deg);
   }
-  
 
 .menu {
     display: flex;
@@ -135,7 +133,6 @@ div.header-figure::before {
     justify-content: center;
     align-items: center;
     flex-basis: 70%;
-
 }
 
 main {
@@ -153,7 +150,7 @@ aside {
 
 .aside-article {
     margin: 10%;
-} 
+}
 
 .certificate > img {
     width: 100%;
@@ -269,7 +266,7 @@ ul {
     .burger-btn {
         display: none;
     }
-}   
+}
 
 @media (max-width: 1920px) {
     .burger-btn {
@@ -302,7 +299,7 @@ ul {
     .project > a > img {
         height: 170px;
     }
-} 
+}
 
 @media (max-width: 900px) {
     .container {
@@ -355,14 +352,14 @@ ul {
         text-align: right;
         box-shadow: #ccc;
         box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
-    }     
+    }
     .menu-open {
         right: 10px;
         transition: 0.5s ease-in-out;
     }
     .burger-btn{
         display: flex;
-    }    
+    }
     header{
         background-color: #d0ffff;
     }
@@ -382,7 +379,6 @@ ul {
     footer .rs-school-img {
         height: 35px;
     }
-    
 }
 
 @media (max-width: 555px) {
@@ -393,14 +389,14 @@ ul {
     header{
         flex-direction: column;
         align-items: center;
-    }    
+    }
     .title {
         margin: 0 0 10px;
     }
     pre {
         overflow: scroll;
     }
-    p, 
+    p,
     ul {
         margin: 3% 3%;
     }

@@ -200,7 +200,10 @@ section {
     height: 170px;
 }
 
-.project > a:nth-child(2) {
+.project > a {
+    display: flex;
+    justify-content: center;
+    align-items:center;
     border: 1px solid rgb(191, 191, 191);
 }
 
